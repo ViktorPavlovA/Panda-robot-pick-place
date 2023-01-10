@@ -66,7 +66,7 @@ OR
 `python3 check_gripper.py`
 
 ** Параметры куба **
-![alt text]([(https://ic.wampi.ru/2023/01/11/n5NWBNJCe8U.jpg)])
+![alt text]([https://ic.wampi.ru/2023/01/11/n5NWBNJCe8U.jpg])
 
 # FIN
 ## Вы шикарны
