@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- specify the planning pipeline -->
+  <arg name="pipeline" default="ompl" />
+
+  <!-- Panda specific options -->
+  <arg name="load_gripper" default="true" />
+  <arg name="transmission" default="effort" />
+
+  <!-- Gazebo specific options -->
+  <arg name="gazebo_gui" default="true" />
+  <arg name="paused" default="false" />
+ <!--
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  <arg name="world_name" value="$(find panda_moveit_config)/worlds/new_world.world"/>
+  </include>
+  -->
+
+  <!-- Launch the gazebo simulator and spawn the robot -->
+  <include file="$(find franka_gazebo)/launch/panda.launch" pass_all_args="true">
+    <arg name="headless" value="$(eval not arg('gazebo_gui'))" />
+    <arg name="use_gripper" default="$(arg load_gripper)" />
+    <arg name="controller" default="$(arg transmission)_joint_trajectory_controller" />
+    
+    <arg name="x" default="0.0" />
+    <arg name="y" default="0.0" />
+    <arg name="z" default="0.0" />
+    <arg name="roll" default="0.0"/>
+    <arg name="pitch" default="0.0"/>
+    <arg name="yaw" default="0.0"/>
+  </include>
+  
+<!-- 
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
+        args="-file $(find panda_moveit_config)/urdf/cube.urdf -urdf -x 0.2 -y 0 -z 1 -model cube2" /> -->
+    <!-- 
+ <include file="$(find panda_moveit_config)/urdf_cube/cube.urdf">
+    <arg name="x" value="2" />
+    <arg name="y" value="0" />
+    <arg name="z" value="0" />
+    <arg name="roll" value="0"/>
+    <arg name="pitch" value="0"/>
+    <arg name="yaw" value="0" />
+ </include>
+  -->
+
+  
+ 
+  <include file="$(dirname)/demo.launch" pass_all_args="true">
+    <!-- robot description is loaded by gazebo.launch, to enable Gazebo features -->
+    <arg name="load_robot_description" value="false" />
+    <!-- MoveItSimpleControllerManager provides ros_control's JointTrajectory controllers
+         as well as GripperCommand actions -->
+    <arg name="moveit_controller_manager" value="simple" />
+  </include>
+</launch>

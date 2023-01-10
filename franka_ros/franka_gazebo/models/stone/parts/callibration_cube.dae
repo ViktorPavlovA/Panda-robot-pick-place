@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.4.1 commit date:2022-12-19, commit time:17:00, hash:55485cb379f7</authoring_tool>
+    </contributor>
+    <created>2022-12-29T11:20:21</created>
+    <modified>2022-12-29T11:20:21</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">39.59775</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">1</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_geometries>
+    <geometry id="xyzCalibration_cube-mesh" name="xyzCalibration_cube">
+      <mesh>
+        <source id="xyzCalibration_cube-mesh-positions">
+          <float_array id="xyzCalibration_cube-mesh-positions-array" count="210">0 0.01999998 0.01999998 0 0.01999998 0 0 0 0.01999998 0 0 0 0.005040287 0 0.003680825 0.006652772 0 0.003680825 0.01253521 0 0.003680825 0.009553074 0 0.008576214 0.01431673 0 0.003680825 0.01999998 0 0 0.005257606 0 0.01598572 0.008585572 0 0.01006746 0.0069049 0 0.01599192 0.009535133 0 0.01133638 0.01247388 0 0.01599192 0.01030749 0 0.01002186 0.01410079 0 0.01595664 0.01999998 0 0.01999998 0.006322145 0.004427194 0.01999998 0.006322145 0.004007041 0.01999998 0.01411217 0.004007041 0.01999998 0.01411217 0.005519688 0.01999998 0.006406188 0.01480549 0.01999998 0.006406188 0.01631808 0.01999998 0.01999998 0.01999998 0.01999998 0.01392728 0.01631808 0.01999998 0.01392728 0.01589792 0.01999998 0.008616328 0.005519688 0.01999998 0.01161634 0.01480549 0.01999998 0.01999998 0.01999998 0 0.01999998 0.01045089 0.009229779 0.01999998 0.01051056 0.003717422 0.01999998 0.008829951 0.003699243 0.01999998 0.008770287 0.009211599 0.01999998 0.01432669 0.01607054 0.01999998 0.01259571 0.01605176 0.01999998 0.006461501 0.01598542 0.01999998 0.009586811 0.01064068 0.01999998 0.004730522 0.01596665 0.01410079 0.001901566 0.01595509 0.01030749 0.001896619 0.01002025 0.01431673 0.001891314 0.003679275 0.01253521 0.001891314 0.003679275 0.009553074 0.001895368 0.008574604 0.006652772 0.001891314 0.003679275 0.005040287 0.001891314 0.003679275 0.008585572 0.001896619 0.01006585 0.005257606 0.001901566 0.01598411 0.0069049 0.001901566 0.01599031 0.009535133 0.001897692 0.01133483 0.01247388 0.001901566 0.01599031 0.01392728 0.01589792 0.018 0.008616328 0.005519688 0.018 0.01392728 0.01631808 0.018 0.006406188 0.01631808 0.018 0.006406188 0.01480549 0.018 0.01161634 0.01480549 0.018 0.006322145 0.004427194 0.018 0.006322145 0.004007041 0.018 0.01411217 0.004007041 0.018 0.01411217 0.005519688 0.018 0.01806229 0.01045 0.009232759 0.01807111 0.01432585 0.01607352 0.01807183 0.01259481 0.01605474 0.01806485 0.009585976 0.01064366 0.01807445 0.006460666 0.01598834 0.01807516 0.004729688 0.01596963 0.018063 0.008769452 0.00921458 0.01805448 0.008829116 0.003702223 0.01805377 0.01050972 0.003720402</float_array>
+          <technique_common>
+            <accessor source="#xyzCalibration_cube-mesh-positions-array" count="70" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="xyzCalibration_cube-mesh-normals">
+          <float_array id="xyzCalibration_cube-mesh-normals-array" count="279">-1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 -2.23048e-7 0 1 -1.42577e-6 0 1 2.47153e-7 0 1 0 1 0 0 0 -1 1 0 0 1 1.16384e-6 0 1 -3.01728e-7 0 1 -4.18063e-7 0 1 1.99649e-7 0 -0.8425888 4.47626e-4 0.5385575 -0.8425887 4.48792e-4 0.5385575 -0.8452239 -4.44878e-4 -0.5344123 -0.8452239 -4.45094e-4 -0.5344122 -8.63748e-6 8.32423e-4 0.9999997 -8.36756e-6 8.32545e-4 0.9999997 0.8540174 4.3328e-4 0.5202442 0.8540175 4.33542e-4 0.5202442 -0.860344 4.23672e-4 0.5097137 -0.8603441 4.23908e-4 0.5097137 0 8.32546e-4 0.9999997 0 8.32545e-4 0.9999997 0.8743245 -4.04381e-4 -0.4853418 0.8743244 -4.03938e-4 -0.4853419 0.8716411 4.07996e-4 0.4901445 0.8716412 4.08491e-4 0.4901443 0.003760457 -8.32583e-4 -0.9999926 0.003760457 -8.31607e-4 -0.9999927 -0.8706505 -4.09302e-4 -0.4919018 -0.8706507 -4.09421e-4 -0.4919018 0.8456207 -4.44795e-4 -0.5337841 0.8456208 -4.44311e-4 -0.5337841 -0.02166438 -8.32395e-4 -0.999765 -0.02166283 -8.3241e-4 -0.999765 -0.8902072 0.4555558 0 -0.8902075 0.4555553 0 0 -1 0 0.8907915 -0.4544123 0 0.8907917 -0.4544119 0 0.001145243 -0.8700556 0.4929525 0.00114423 -0.870056 0.4929515 -0.001543819 0.01082432 -0.9999403 -0.001544415 0.01082479 -0.9999402 -0.001134991 0.8739717 -0.4859755 -0.001136064 0.8739721 -0.4859747 -3.94735e-4 -0.8632471 -0.5047816 -3.93653e-4 -0.8632473 -0.5047813 -0.001543223 0.01082432 -0.9999403 -0.001544892 0.01082366 -0.9999403 4.09479e-4 0.8582348 0.5132573 4.0967e-4 0.8582352 0.5132565 -4.27073e-4 0.9999414 0.01082456 -4.27103e-4 0.9999414 0.0108245 0.001544117 -0.01082384 0.9999402 0.001543998 -0.01082372 0.9999403 4.2691e-4 -0.9999414 -0.01082396 4.27418e-4 -0.9999414 -0.01082432 0 -0.9999997 8.32551e-4 0 -0.9999997 8.32659e-4 0 -0.9999997 8.32557e-4 0 -0.9999997 8.32468e-4 0 -0.9999997 8.32496e-4 0 -0.9999997 8.32442e-4 0 -0.9999997 8.3245e-4 0 -0.9999997 8.32606e-4 0 -0.9999997 8.32539e-4 0 -0.9999997 8.3254e-4 9.43526e-7 0 1 -1.00911e-6 0 1 0.9999988 4.41725e-4 -0.001539409 0.9999988 4.44485e-4 -0.001539409 0.9999988 4.44792e-4 -0.001539707 0.9999988 4.42662e-4 -0.001539647 0.9999988 4.41645e-4 -0.001539528 0.9999988 4.42065e-4 -0.001539409 0.9999988 4.45135e-4 -0.001539051</float_array>
+          <technique_common>
+            <accessor source="#xyzCalibration_cube-mesh-normals-array" count="93" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="xyzCalibration_cube-mesh-vertices">
+          <input semantic="POSITION" source="#xyzCalibration_cube-mesh-positions"/>
+        </vertices>
+        <triangles count="136">
+          <input semantic="VERTEX" source="#xyzCalibration_cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#xyzCalibration_cube-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 4 1 3 1 5 1 5 2 3 2 6 2 5 3 6 3 7 3 8 4 6 4 9 4 6 1 3 1 9 1 2 5 3 5 10 5 4 6 11 6 10 6 3 7 4 7 10 7 2 8 10 8 12 8 12 9 13 9 14 9 2 10 12 10 14 10 15 11 8 11 16 11 8 12 9 12 16 12 14 13 16 13 17 13 16 14 9 14 17 14 2 15 14 15 17 15 18 16 2 16 19 16 17 16 20 16 19 16 17 16 21 16 20 16 17 16 19 16 2 16 22 16 0 16 2 16 22 17 2 17 18 17 23 16 0 16 22 16 24 18 25 18 26 18 24 19 21 19 17 19 24 16 26 16 21 16 24 16 0 16 23 16 24 16 23 16 25 16 26 16 27 16 21 16 18 16 28 16 22 16 24 20 29 20 1 20 24 20 1 20 0 20 3 21 1 21 29 21 9 21 3 21 29 21 30 22 31 22 29 22 9 23 31 23 32 23 9 22 29 22 31 22 33 22 9 22 32 22 34 22 29 22 24 22 34 22 30 22 29 22 35 22 34 22 24 22 36 22 37 22 35 22 38 24 9 24 33 24 17 25 38 25 36 25 17 26 36 26 35 26 17 22 35 22 24 22 17 22 9 22 38 22 16 27 39 27 15 27 15 28 39 28 40 28 15 29 40 29 8 29 8 30 40 30 41 30 6 31 8 31 41 31 6 32 41 32 42 32 7 33 6 33 43 33 6 34 42 34 43 34 7 35 43 35 5 35 5 36 43 36 44 36 4 37 5 37 45 37 5 38 44 38 45 38 11 39 4 39 46 39 4 40 45 40 46 40 10 41 11 41 47 41 11 42 46 42 47 42 12 43 10 43 48 43 10 44 47 44 48 44 12 45 48 45 13 45 13 46 48 46 49 46 14 47 13 47 50 47 13 48 49 48 50 48 16 49 14 49 50 49 16 50 50 50 39 50 26 51 51 51 27 51 27 52 51 52 52 52 26 0 25 0 53 0 26 0 53 0 51 0 23 53 54 53 25 53 25 53 54 53 53 53 22 22 55 22 54 22 23 22 22 22 54 22 28 20 56 20 55 20 22 20 28 20 55 20 18 54 57 54 28 54 28 55 57 55 56 55 18 22 19 22 58 22 18 22 58 22 57 22 20 20 59 20 58 20 19 20 20 20 58 20 21 0 60 0 59 0 20 0 21 0 59 0 27 53 52 53 21 53 21 53 52 53 60 53 30 56 34 56 61 56 34 57 62 57 61 57 34 58 35 58 62 58 35 59 63 59 62 59 37 60 64 60 35 60 35 61 64 61 63 61 37 62 36 62 64 62 36 63 65 63 64 63 36 64 38 64 65 64 38 65 66 65 65 65 33 66 67 66 38 66 38 67 67 67 66 67 32 68 68 68 33 68 33 69 68 69 67 69 32 70 31 70 69 70 32 71 69 71 68 71 31 72 30 72 69 72 30 73 61 73 69 73 42 74 41 74 40 74 43 75 42 75 40 75 44 76 43 76 46 76 45 77 44 77 46 77 43 78 40 78 46 78 46 79 40 79 49 79 40 80 39 80 50 80 49 81 40 81 50 81 46 82 49 82 48 82 46 83 48 83 47 83 52 84 57 84 58 84 59 16 52 16 58 16 60 16 52 16 59 16 56 16 54 16 55 16 53 16 54 16 56 16 53 16 56 16 51 16 56 85 57 85 52 85 56 16 52 16 51 16 61 86 68 86 69 86 61 87 67 87 68 87 64 88 67 88 61 88 65 89 66 89 67 89 65 90 67 90 64 90 63 91 64 91 61 91 62 92 63 92 61 92</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="xyzCalibration_cube" name="xyzCalibration_cube" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#xyzCalibration_cube-mesh" name="xyzCalibration_cube"/>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,22 @@
+
+<!-- Инструкции для спауна кубика -->
+<launch>
+    <arg name="x" default="0.3" />
+    <arg name="y" default="0.0" />
+    <arg name="z" default="0.0" />
+    <arg name="roll" default="0.0"/>
+    <arg name="pitch" default="0.0"/>
+    <arg name="yaw" default="0.0"/>
+    <arg name="cube_urdf" default="$(find panda_moveit_config)/urdf_cube/cube.urdf"/>
+
+    <!-- <include file="$(find panda_moveit_config)/launch/spawn_cube.launch">
+        <arg name="x" value="$(arg x)" />
+        <arg name="y" value="$(arg y)" />
+        <arg name="z" value="$(arg z)" />
+        <arg name="roll" value="$(arg roll)"/>
+        <arg name="pitch" value="$(arg pitch)"/>
+        <arg name="yaw" value="$(arg yaw)" />
+        <arg name="urdf_robot_file" default="$(arg cube_urdf)" />
+        <arg name="robot_name" default="moving_cube" />
+    </include>-->
+</launch>
