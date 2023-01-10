@@ -74,6 +74,8 @@ OR
 # FIN
 ## Вы шикарны
 
+![alt text](https://ie.wampi.ru/2023/01/11/S9TT55N79Tk.jpg)
+
 
 
 
