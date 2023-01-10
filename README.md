@@ -26,7 +26,9 @@
 `sudo apt update`
 
 Предполагается что уже имеется рабочее пространство catkin_ws/src
+
 `cd catkin/src/`
+
 `git clone https://github.com/ViktorPavlovA/Panda-robot-pick-place.git`
 
 Переходим в catkin_ws
