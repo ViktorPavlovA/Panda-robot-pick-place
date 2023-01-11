@@ -15,35 +15,26 @@
 `rosdep update`
 
 **Установка пакетов panda_robot**
+
+Перейдите по ссылке и выполните инструкции 
+
 [Здесь](https://ros-planning.github.io/moveit_tutorials/doc/getting_started/getting_started.html)
 
-`sudo apt dist-upgrade`
+**Также в catkin\src**
 
-`sudo apt install ros-noetic-catkin python3-catkin-tools python3-osrf-pycommon`
+необходимо склонировать репозиторий 
 
-`sudo apt install python3-wstool`
+`git clone https://github.com/frankaemika/franka_ros.git`
 
-`sudo apt update`
+## Замена файлов
 
-Предполагается что уже имеется рабочее пространство catkin_ws/src
+Взять из репозитория папку `panda_moveit_config` и заменить ее на ту что есть.
 
-`cd catkin/src/`
+Затем в пакете `franka_ros` аналогичным образом заменить `franka_gazebo`
 
-`git clone https://github.com/ViktorPavlovA/Panda-robot-pick-place.git`
-
-Переходим в catkin_ws
-
-`cd ..`
+Возможно понадобится сделать 
 
 `catkin_make`
-
-** команда выше может долго выполняться +- 5-10 мин**
-
-`source ~/catkin_ws/devel/setup.bash`
-
-OR
-
-`echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc`
 
 ## Запуск
 
@@ -75,7 +66,5 @@ OR
 ## Вы шикарны
 
 ![alt text](https://ie.wampi.ru/2023/01/11/S9TT55N79Tk.jpg)
-
-
 
 
